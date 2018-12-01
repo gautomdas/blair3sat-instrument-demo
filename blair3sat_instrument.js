@@ -92,7 +92,7 @@ function draw() {
       spec_h = window.innerHeight/zoom;
       delta = delta - 0.00008;
       if(timer>800){
-        var k = 'Notice Speed of Antennaa Starts to Slow'
+        var k = 'Notice Speed of Antenna Starts to Slow'
         fill(255, 255, 255);
         textSize(20);
         textStyle(NORMAL);
