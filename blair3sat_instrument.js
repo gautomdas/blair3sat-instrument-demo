@@ -143,7 +143,7 @@ function draw() {
       text(k, 0, 100, w, h); // Text wraps within text boxThe
       fill(255);
       
-      if(timer>1500){
+      if(timer>1800){
         var k = 'The brake will disengage again when the antenna is taut.'
         fill(255, 255, 255);
         textSize(20);
@@ -166,7 +166,7 @@ function draw() {
       text(k, 0, 100, w, h); // Text wraps within text boxThe
       fill(255);
       
-      if(timer>1500){
+      if(timer>2200){
         var k = 'This process of engangement and disengangement will continue for the life of the cubesat.'
         fill(255, 255, 255);
         textSize(20);
@@ -177,14 +177,16 @@ function draw() {
         if(delta<1){
           delta = delta +0.0008
         }
-        var k = 'Fin. Go to different time: '
-        fill(255, 255, 255);
-        textSize(40);
-        textStyle(ITALIC);
-        textAlign(CENTER);
-        text(k, 0, h-150, w, h);
-        
-        slid = true;
+        if(timer>2400){
+          var k = 'Fin. Go to different time: '
+          fill(255, 255, 255);
+          textSize(40);
+          textStyle(ITALIC);
+          textAlign(CENTER);
+          text(k, 0, h-150, w, h);
+          
+          slid = true;
+        }
       }
       scale(zoom);
       spec_w = window.innerWidth/zoom;
